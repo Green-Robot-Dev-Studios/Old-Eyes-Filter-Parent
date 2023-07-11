@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            @font-face {
+              font-family: circular;
+              src: url(circular.ttf);
+            }
+            
+            body {
+                margin: 0;
+                font-family: circular, sans-serif;
+            }
+
+            #overlay {
+                height: 87vh;
+                width: 100%;
+                z-index: 1;
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+
+            #clouds {
+                height: 87vh;
+                width: 100%;
+                display: block;
+                position: absolute;
+                z-index: 0;
+                top: 0px;
+                left: 0px;
+            }
+
+            .header {
+                margin-left: 5%;
+            }
+
+            .headerText {
+                font-size: 5em;
+                font-weight: 400;
+                letter-spacing: -2px;
+                margin-bottom: 0.2em;
+            }
+
+            .headerSubtext {
+                margin-top: 0.2em;
+                font-size: 1.2em;
+                font-weight: 100;
+                letter-spacing: -1px;
+                color: rgb(35, 35, 35);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="clouds"></div>
+
+        <div id="overlay">
+            <div class="header">
+                <h1 class="headerText">blissful browsing.</h1>
+                <h3 class="headerSubtext">KNOW BEFORE YOU CLICK.</h3>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>
+                We don't like pesky sites.
+            </h2>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+
+        <script src="three.min.js"></script>
+        <script src="vanta.clouds.min.js"></script>
+        <script>
+            VANTA.CLOUDS({
+            el: "#clouds",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00
+            })
+        </script>
+    </body>
+</html>
