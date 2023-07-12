@@ -1,0 +1,59 @@
+@font-face {
+    font-family: circular;
+    src: url(../fonts/circular.ttf);
+}
+
+img.emoji {
+    margin: 0;
+    height: 1em;
+    width: 1em;
+    top: 3px;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    font-family: circular, sans-serif;
+}
+
+#overlay {
+    height: 87vh;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#clouds {
+    height: 87vh;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+}
+
+.header {
+    margin-left: 5%;
+}
+
+.headerText {
+    font-size: 8vmax;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 0.2em;
+}
+
+.headerSubtext {
+    margin-top: 0.2em;
+    font-size: 3vmax;
+    font-weight: 100;
+    letter-spacing: -1px;
+    color: rgb(35, 35, 35);
+}
+
+.content {
+    padding: 2em;
+}
